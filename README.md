@@ -18,9 +18,9 @@ BGU Mart is a simple supermarket management solution written in Python (3.9+) us
    - Reads a configuration file (e.g., `config.txt`) to populate the tables with initial data.
 
 2. **action.py**  
-   **Usage**: `python action.py actions.txt`  
+   **Usage**: `python action.py action.txt`  
    **Description**:  
-   - Reads an actions file (e.g., `actions.txt`).  
+   - Reads an actions file (e.g., `action.txt`).  
    - Each line corresponds to a sale (negative quantity) or a supply (positive quantity).  
    - Valid actions update the product quantity and log a record in the `activities` table.  
    - If a sale action does not have enough stock, the action is ignored.
@@ -44,7 +44,7 @@ BGU Mart is a simple supermarket management solution written in Python (3.9+) us
 
 3. **Process Actions**
 
-   `python action.py actions.txt`
+   `python action.py action.txt`
 
 
 4. **Print the Updated Database State**

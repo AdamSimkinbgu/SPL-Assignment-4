@@ -11,28 +11,28 @@ class Activitie:
         self.date = date
  
 class Branche:
-    def __init__(self, bid: int, location: str, number_of_employees: int):
-        self.bid = bid
+    def __init__(self, id: int, location: str, number_of_employees: int):
+        self.id = id
         self.location = location
         self.number_of_employees = number_of_employees
 
 class Employee:
-    def __init__(self, eid: int, name: str, salary: float, branch: int):
-        self.eid = eid
+    def __init__(self, id: int, name: str, salary: float, branch: int):
+        self.id = id
         self.name = name
         self.salary = salary
-        self.branch = branch
+        self.branche = branch
 
 class Product:
-    def __init__(self, pid: int, description: str, price: float, quantity: int):
-        self.pid = pid
+    def __init__(self, id: int, description: str, price: float, quantity: int):
+        self.id = id
         self.description = description
         self.price = price
         self.quantity = quantity
 
 class Supplier:
-    def __init__(self, sid: int, name: str, contact_information: str):
-        self.sid = sid
+    def __init__(self, id: int, name: str, contact_information: str):
+        self.id = id
         self.name = name
         self.contact_information = contact_information
  
@@ -72,7 +72,7 @@ class Repository(object):
             CREATE TABLE products (
                 id          INTEGER PRIMARY KEY,
                 description TEXT    NOT NULL,
-                price       REAL    NOT NULL,
+                price       REAL NOT NULL,
                 quantity    INTEGER NOT NULL
             );
 
